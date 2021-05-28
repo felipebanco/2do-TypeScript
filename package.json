@@ -1,0 +1,12 @@
+{
+  "name": "05-proyecto",
+  "version": "1.0.0",
+  "description": "Crear una estructura de proyecto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "CESIT",
+  "license": "mit"
+}
