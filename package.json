@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "CESIT",
-  "license": "mit"
+  "license": "mit",
+  "devDependencies": {
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  }
 }
