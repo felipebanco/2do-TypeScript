@@ -16,5 +16,5 @@ class Persona {
     }
 }
 
-const per1 = new Persona("Juan", "Rodriguez", 34);
+const per1 = new Persona("Juanaa", "Rodriguez", 34);
 console.info(per1.quienSos());
