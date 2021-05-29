@@ -1,3 +1,5 @@
-import { ejemploAgreYComp } from './ejemplos/comp-y-agre';
+// import { ejemploAgreYComp } from './ejemplos/comp-y-agre';
+import { herencia } from './clases/herencia';
 
-ejemploAgreYComp();
+// ejemploAgreYComp();
+herencia();
