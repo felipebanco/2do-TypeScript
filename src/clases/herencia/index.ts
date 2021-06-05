@@ -10,6 +10,10 @@ class Persona {
     protected quienSoy():string {
         return `Yo soy ${this._nombre} y mi edad es ${this._edad}`;
     }
+
+    quienSoyPublico():string {
+        return `Yo soy ${this._nombre} y mi edad es ${this._edad}`;
+    }
 }
 
 class Cliente extends Persona {
@@ -32,8 +36,23 @@ class Cliente extends Persona {
     get empresa() { return  this._empresa }
 }
 
+class Proveedor extends Persona {
+
+    constructor(nombre: string, edad: number){
+        super(nombre, edad);
+    }
+
+    // puede que no ande el override en la version de ts que estemos usando
+    override quienSoyPublico():string {
+        return `Soy proveedor y ${super.quienSoyPublico()}`;
+    }
+}
+
 export const herencia = () => {
     const clie = new Cliente("Juan Perez", 33, "IMPSA");
     console.info(clie.describirse());
     console.info(clie.empresa);
+
+    const prov = new Proveedor("IMPSA", 80);
+    console.info(prov.quienSoyPublico());
 };
