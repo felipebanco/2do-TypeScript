@@ -48,3 +48,7 @@ const barco = new Barco();
 const anfi = new Anfibio(33, 22, 4);
 
 ingresarAlMar(barco);
+console.info(anfi);
+console.info(anfi.calcVelKm());
+console.info(auto);
+console.info(barco);

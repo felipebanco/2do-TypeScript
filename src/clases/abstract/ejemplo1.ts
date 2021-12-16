@@ -8,7 +8,7 @@ abstract class Animal {
     }
 
     describirese(): string {
-        return `Tengo ${this.cantPatas} y mi raza es ${this.raza}`;
+        return `Tengo ${this.cantPatas} patas y mi raza es ${this.raza}`;
     }
 
     //pueden o no tener metodos abstractos
@@ -44,6 +44,7 @@ class Gato extends Animal {
 const p1 = new Perro(4, "Dalmata");
 // no lo puedo ver porque es protected... p1.saludame("Juan Perez");
 p1.hablar("Juan Perez");
+console.info(p1.describirese());
 // NOOO se puede instanciar... const a1 = new Animal(4, "Perro");
 
 
@@ -56,4 +57,5 @@ animales.push(new Gato(4, "Siames"));
 
 for(let animal of animales) {
     console.info(animal.saludame("Pepe Grillo"));
+    console.info(animal.describirese());
 }

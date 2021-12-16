@@ -13,3 +13,5 @@ export const ejemploAgreYComp = () => {
 
     celular.mostrar();
 }
+
+ejemploAgreYComp();

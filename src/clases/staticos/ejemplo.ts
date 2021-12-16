@@ -21,8 +21,10 @@ class ClaseUno {
     }
 }
 
+//Ls atributos y metodos estaticos no se pueden instanciar, pero si invocar desde fuera
 const c1 = new ClaseUno();
 c1.ejecutar();
+console.info('el valor del número PI es: ',Circulo.PI);
 
 class ClaseDos {
     ejecutar() {
